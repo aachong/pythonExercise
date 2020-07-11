@@ -120,10 +120,3 @@ for epoch in range(5):
 print('Finished Training')
 
 
-import torch
-
-a=torch.ones(3, 4)
-b=torch.ones(3, 6, 4)
-
-c=torch.bmm(b, a.unsqueeze(2)).squeeze()
-c.size()
